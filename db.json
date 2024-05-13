@@ -52,10 +52,55 @@
   ],
   "Machines": [
     {
-      "id": 0,
-      "gmid": "string",
-      "denomination": 0,
-      "houseNumber": "string",
+      "id": 1,
+      "gmid": "111",
+      "denomination": 10,
+      "houseNumber": "111",
+      "linkIds": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "gmid": "222",
+      "denomination": 10,
+      "houseNumber": "222",
+      "linkIds": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "gmid": "333",
+      "denomination": 10,
+      "houseNumber": "333",
+      "linkIds": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "gmid": "444",
+      "denomination": 10,
+      "houseNumber": "444",
+      "linkIds": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "gmid": "555",
+      "denomination": 10,
+      "houseNumber": "555",
+      "linkIds": [
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "gmid": "555",
+      "denomination": 10,
+      "houseNumber": "555",
       "linkIds": [
         1
       ]
