@@ -215,53 +215,6 @@
             "totalMoneyIn":0,
             "totalMoneyOut":0
          }
-      },
-      {
-         "iCardConfiguration":{
-            "id":3,
-            "systemId":"aabbcc112233",
-            "ipAddress":"192.168.245.183",
-            "macAddress":"ABCDEF0003",
-            "applicationFirmwareId":"a1s1s1s1",
-            "bootloaderFirmwareId":"a1s1s1s1",
-            "egmProtocol":"SAS",
-            "gmid":"333",
-            "denomination":10,
-            "maxBet":1000,
-            "houseNumber":"333",
-            "bankNumber":"B123",
-            "numberProgressiveLevels":0,
-            "linkIds":[
-               1
-            ]
-         },
-         "iCardState":{
-            "operationalStatus":"active",
-            "status":"online",
-            "Enabled":true,
-            "Errors":[
-               
-            ]
-         },
-         "egmState":{
-            "operationalStatus":"active",
-            "status":"online",
-            "Enabled":true,
-            "Errors":[
-               
-            ]
-         },
-         "iCardMeters":{
-            "totalTurnover":12345678,
-            "totalWins":12345,
-            "totalResets":111
-         },
-         "egmMeters":{
-            "totalTurnover":12345678,
-            "totalWins":12345,
-            "totalMoneyIn":0,
-            "totalMoneyOut":0
-         }
       }
    ],
    "JackpotHits":[
@@ -278,17 +231,6 @@
       },
       {
          "id":2,
-         "linkId":1,
-         "levelId":2,
-         "jackpotId":2,
-         "status":"reset",
-         "triggerTime":"2024-05-12T22:27:22.373+00:00",
-         "resetTime":"2024-05-12T22:27:23.373+00:00",
-         "resetMethod":"egmTransfer",
-         "amount":12000
-      },
-      {
-         "id":3,
          "linkId":1,
          "levelId":1,
          "jackpotId":3,
