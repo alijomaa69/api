@@ -1,25 +1,43 @@
 {
   "Jpc": [
     {
-      "id": 1,
-      "name": "DevJpc",
-      "ipAddress": "192.168.245.180",
-      "linkIds": [
-        1
-      ],
-      "links": null
+		"configuration": {
+		  "id": 1,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.180",
+		  "macAddress": "ABCDEF1234",
+		  "firmwareApplicationId": "a1s1s1s1",
+		  "firmwareBootloaderId": "a1s1s1s1",
+		  "licenseKey": "3jsdfhskdhfk174623462837643264",
+		  "name": "DevJpc",
+		  "venueName": "Ramsgate RSL",
+		  "linkIds": [
+			1
+		  ],
+		  "links": null
+		},
+		"state": {
+			"operationalStatus":  "active",
+			"logicCageStatus": ["backDoorOpen", "topDoorOpen"],
+		},
+		"meters": {
+			"totalTurnover": 12345678,
+			"totalContributions": 123456,
+			"totalWins": 12345,
+			"totalResets": 111
+		}
     }
   ],
   "Links": [
     {
       "id": 1,
       "name": "Cash Express",
-      "type": "standard",
-      "levels": [
+	  "status": "active",
+      "levelIds": [
         1,
         2
       ],
-      "machines": [
+      "machineIds": [
         1,
         2,
         3
@@ -28,111 +46,380 @@
   ],
   "Levels" : [
     {
-      "id": 1,
-      "name": "Level1",
-      "type": "standard",
-      "min": 10000,
-      "max": 50000,
-      "increment": 1,
-      "linkIds": [
-        1
-      ]
+		"id": 1,
+		"name": "Level1",
+		"autoPayLimit": 0,
+		"autoPayDelay": 0,
+		"scope": "local",
+		"maxResetPercentage": 0,
+		"type": {
+			"name": "standard",
+			"probability": "0.00001",
+			"denomination": 10,
+			"pools": [
+				{
+					"name": "main"
+					"base": 10000,
+					"max": 50000,
+					"incrementPercentage": 1,
+				},
+				{
+					"name": "hidden"
+					"base": 0,
+					"max": 0,
+					"incrementPercentage": "0.5",
+				},
+				{
+					"name": "overflow"
+					"base": 0,
+					"max": 0,
+					"incrementPercentage": 1,
+				},
+			] 
+		}
+		"linkIds": [
+			1
+		]
     },
     {
-      "id": 2,
-      "name": "Level2",
-      "type": "standard",
-      "min": 5000,
-      "max": 10000,
-      "increment": 2,
-      "linkIds": [
-        1
-      ]
-    }
+		"id": 2,
+		"name": "Level1",
+		"autoPayLimit": 0,
+		"autoPayDelay": 0,
+		"scope": "local",
+		"maxResetPercentage": 0,
+		"type": {
+			"name": "standard",
+			"probability": "0.00005",
+			"denomination": 10,
+			"pools": [
+				{
+					"name": "main"
+					"base": 5000,
+					"max": 10000,
+					"incrementPercentage": 1,
+				},
+				{
+					"name": "hidden"
+					"base": 0,
+					"max": 0,
+					"incrementPercentage": "0.5",
+				},
+				{
+					"name": "overflow"
+					"base": 0,
+					"max": 0,
+					"incrementPercentage": 1,
+				},
+			] 
+		}
+		"linkIds": [
+			1
+		]
+    },
   ],
-  "Machines": [
+  "ICards": [
     {
-      "id": 1,
-      "gmid": "111",
-      "denomination": 10,
-      "houseNumber": "111",
-      "linkIds": [
-        1
-      ]
+		"iCardConfiguration": {
+		  "id": 1,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.181",
+		  "macAddress": "ABCDEF0001",
+		  "applicationFirmwareId": "a1s1s1s1",
+		  "bootloaderFirmwareId": "a1s1s1s1",
+		  "egmProtocol": "SAS",
+		  "gmid": "111",
+		  "denomination": 10,
+		  "maxBet": 1000,
+		  "houseNumber": "111",
+		  "bankNumber": "B123",
+		  "numberProgressiveLevels": 0,
+		  "linkIds": [
+			1
+		  ]
+		},
+		"iCardState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"egmState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"iCardMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalResets": 111
+		},
+		"egmMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalMoneyIn": 0,
+			"totalMoneyOut": 0,
+		}
     },
     {
-      "id": 2,
-      "gmid": "222",
-      "denomination": 10,
-      "houseNumber": "222",
-      "linkIds": [
-        1
-      ]
+		"iCardConfiguration": {
+		  "id": 2,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.182",
+		  "macAddress": "ABCDEF0002",
+		  "applicationFirmwareId": "a1s1s1s1",
+		  "bootloaderFirmwareId": "a1s1s1s1",
+		  "egmProtocol": "SAS",
+		  "gmid": "222",
+		  "denomination": 10,
+		  "maxBet": 1000,
+		  "houseNumber": "222",
+		  "bankNumber": "B123",
+		  "numberProgressiveLevels": 0,
+		  "linkIds": [
+			1
+		  ]
+		},
+		"iCardState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"egmState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"iCardMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalResets": 111
+		},
+		"egmMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalMoneyIn": 0,
+			"totalMoneyOut": 0,
+		}
     },
-    {
-      "id": 3,
-      "gmid": "333",
-      "denomination": 10,
-      "houseNumber": "333",
-      "linkIds": [
-        1
-      ]
+	{
+		"iCardConfiguration": {
+		  "id": 3,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.183",
+		  "macAddress": "ABCDEF0003",
+		  "applicationFirmwareId": "a1s1s1s1",
+		  "bootloaderFirmwareId": "a1s1s1s1",
+		  "egmProtocol": "SAS",
+		  "gmid": "333",
+		  "denomination": 10,
+		  "maxBet": 1000,
+		  "houseNumber": "333",
+		  "bankNumber": "B123",
+		  "numberProgressiveLevels": 0,
+		  "linkIds": [
+			1
+		  ]
+		},
+		"iCardState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"egmState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"iCardMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalResets": 111
+		},
+		"egmMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalMoneyIn": 0,
+			"totalMoneyOut": 0,
+		}
     },
-    {
-      "id": 4,
-      "gmid": "444",
-      "denomination": 10,
-      "houseNumber": "444",
-      "linkIds": [
-        1
-      ]
+	{
+		"iCardConfiguration": {
+		  "id": 4,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.184",
+		  "macAddress": "ABCDEF0004",
+		  "applicationFirmwareId": "a1s1s1s1",
+		  "bootloaderFirmwareId": "a1s1s1s1",
+		  "egmProtocol": "SAS",
+		  "gmid": "444",
+		  "denomination": 10,
+		  "maxBet": 1000,
+		  "houseNumber": "444",
+		  "bankNumber": "B123",
+		  "numberProgressiveLevels": 0,
+		  "linkIds": [
+			1
+		  ]
+		},
+		"iCardState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"egmState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"iCardMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalResets": 111
+		},
+		"egmMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalMoneyIn": 0,
+			"totalMoneyOut": 0,
+		}
     },
-    {
-      "id": 5,
-      "gmid": "555",
-      "denomination": 10,
-      "houseNumber": "555",
-      "linkIds": [
-        1
-      ]
+	{
+		"iCardConfiguration": {
+		  "id": 5,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.185",
+		  "macAddress": "ABCDEF0005",
+		  "applicationFirmwareId": "a1s1s1s1",
+		  "bootloaderFirmwareId": "a1s1s1s1",
+		  "egmProtocol": "SAS",
+		  "gmid": "555",
+		  "denomination": 10,
+		  "maxBet": 1000,
+		  "houseNumber": "555",
+		  "bankNumber": "B123",
+		  "numberProgressiveLevels": 0,
+		  "linkIds": [
+			1
+		  ]
+		},
+		"iCardState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"egmState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"iCardMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalResets": 111
+		},
+		"egmMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalMoneyIn": 0,
+			"totalMoneyOut": 0,
+		}
     },
-    {
-      "id": 6,
-      "gmid": "555",
-      "denomination": 10,
-      "houseNumber": "555",
-      "linkIds": [
-        1
-      ]
-    }
+	{
+		"iCardConfiguration": {
+		  "id": 6,
+		  "systemId": "aabbcc112233",
+		  "ipAddress": "192.168.245.186",
+		  "macAddress": "ABCDEF0006",
+		  "applicationFirmwareId": "a1s1s1s1",
+		  "bootloaderFirmwareId": "a1s1s1s1",
+		  "egmProtocol": "SAS",
+		  "gmid": "666",
+		  "denomination": 10,
+		  "maxBet": 1000,
+		  "houseNumber": "666",
+		  "bankNumber": "B123",
+		  "numberProgressiveLevels": 0,
+		  "linkIds": [
+			1
+		  ]
+		},
+		"iCardState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"egmState": {
+			"operationalStatus":  "active",
+			"status": "online",
+			"Enabled" : true,
+			"Errors" : [],
+		},
+		"iCardMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalResets": 111
+		},
+		"egmMeters": {
+			"totalTurnover": 12345678,
+			"totalWins": 12345,
+			"totalMoneyIn": 0,
+			"totalMoneyOut": 0,
+		}
+    },
   ],
   "JackpotHits": [
     {
-      "id": 1,
-      "jackpotId": 1,
-      "triggerTime": "2024-05-12T22:27:21.373+00:00",
-      "resetTime": "2024-05-12T22:27:22.373+00:00",
-      "amount": 10000,
-      "levelId": 1,
-      "linkId": 1
+		"id": 1,
+		"linkId": 1		
+		"levelId": 2,
+		"jackpotId": 1,
+		"status": "reset",
+		"triggerTime": "2024-05-12T22:27:21.373+00:00",
+		"resetTime": "2024-05-12T22:27:22.373+00:00",
+		"resetMethod": "egmTransfer",
+		"amount": 10000,
     },
     {
-      "id": 2,
-      "jackpotId": 2,
-      "triggerTime": "2024-05-12T22:27:22.373+00:00",
-      "resetTime": "2024-05-12T22:27:23.373+00:00",
-      "amount": 12000,
-      "levelId": 2,
-      "linkId": 1
+		"id": 2,
+		"linkId": 1		
+		"levelId": 2,
+		"jackpotId": 2,
+		"status": "reset",
+		"triggerTime": "2024-05-12T22:27:22.373+00:00",
+		"resetTime": "2024-05-12T22:27:23.373+00:00",
+		"resetMethod": "egmTransfer",
+		"amount": 12000,
     },
     {
-      "id": 3,
-      "jackpotId": 3,
-      "triggerTime": "2024-05-12T22:27:24.373+00:00",
-      "resetTime": "2024-05-12T22:27:24.373+00:00",
-      "amount": 12300,
-      "levelId": 2,
-      "linkId": 1
+		"id": 3,
+		"linkId": 1,		
+		"levelId": 1,
+		"jackpotId": 3,
+		"status": "pending",
+		"triggerTime": "2024-05-12T22:27:24.373+00:00",
+		"resetTime": "",
+		"resetMethod": "",
+		"amount": 12300,
     }
+  ],
+  "Media": [
+	{
+		"type": "udpMulticast",
+		"config": {
+			"port": "1000",
+			"ipAddress": "192.168.245.99"
+		}
+	}
   ]
 }
