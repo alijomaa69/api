@@ -58,22 +58,22 @@
 			"denomination": 10,
 			"pools": [
 				{
-					"name": "main"
+					"name": "main",
 					"base": 10000,
 					"max": 50000,
-					"incrementPercentage": 1,
+					"incrementPercentage": 1
 				},
 				{
-					"name": "hidden"
+					"name": "hidden",
 					"base": 0,
 					"max": 0,
-					"incrementPercentage": "0.5",
+					"incrementPercentage": "0.5"
 				},
 				{
-					"name": "overflow"
+					"name": "overflow",
 					"base": 0,
 					"max": 0,
-					"incrementPercentage": 1,
+					"incrementPercentage": 1
 				},
 			] 
 		}
@@ -94,22 +94,22 @@
 			"denomination": 10,
 			"pools": [
 				{
-					"name": "main"
+					"name": "main",
 					"base": 5000,
 					"max": 10000,
-					"incrementPercentage": 1,
+					"incrementPercentage": 1
 				},
 				{
-					"name": "hidden"
+					"name": "hidden",
 					"base": 0,
 					"max": 0,
-					"incrementPercentage": "0.5",
+					"incrementPercentage": "0.5"
 				},
 				{
-					"name": "overflow"
+					"name": "overflow",
 					"base": 0,
 					"max": 0,
-					"incrementPercentage": 1,
+					"incrementPercentage": 1
 				},
 			] 
 		}
@@ -142,13 +142,13 @@
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"egmState": {
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"iCardMeters": {
 			"totalTurnover": 12345678,
@@ -159,7 +159,7 @@
 			"totalTurnover": 12345678,
 			"totalWins": 12345,
 			"totalMoneyIn": 0,
-			"totalMoneyOut": 0,
+			"totalMoneyOut": 0
 		}
     },
     {
@@ -185,13 +185,13 @@
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"egmState": {
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"iCardMeters": {
 			"totalTurnover": 12345678,
@@ -202,7 +202,7 @@
 			"totalTurnover": 12345678,
 			"totalWins": 12345,
 			"totalMoneyIn": 0,
-			"totalMoneyOut": 0,
+			"totalMoneyOut": 0
 		}
     },
 	{
@@ -228,13 +228,13 @@
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"egmState": {
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"iCardMeters": {
 			"totalTurnover": 12345678,
@@ -245,7 +245,7 @@
 			"totalTurnover": 12345678,
 			"totalWins": 12345,
 			"totalMoneyIn": 0,
-			"totalMoneyOut": 0,
+			"totalMoneyOut": 0
 		}
     },
 	{
@@ -271,13 +271,13 @@
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"egmState": {
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"iCardMeters": {
 			"totalTurnover": 12345678,
@@ -288,7 +288,7 @@
 			"totalTurnover": 12345678,
 			"totalWins": 12345,
 			"totalMoneyIn": 0,
-			"totalMoneyOut": 0,
+			"totalMoneyOut": 0
 		}
     },
 	{
@@ -314,13 +314,13 @@
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"egmState": {
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"iCardMeters": {
 			"totalTurnover": 12345678,
@@ -331,7 +331,7 @@
 			"totalTurnover": 12345678,
 			"totalWins": 12345,
 			"totalMoneyIn": 0,
-			"totalMoneyOut": 0,
+			"totalMoneyOut": 0
 		}
     },
 	{
@@ -357,13 +357,13 @@
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"egmState": {
 			"operationalStatus":  "active",
 			"status": "online",
 			"Enabled" : true,
-			"Errors" : [],
+			"Errors" : []
 		},
 		"iCardMeters": {
 			"totalTurnover": 12345678,
@@ -374,32 +374,32 @@
 			"totalTurnover": 12345678,
 			"totalWins": 12345,
 			"totalMoneyIn": 0,
-			"totalMoneyOut": 0,
+			"totalMoneyOut": 0
 		}
     },
   ],
   "JackpotHits": [
     {
 		"id": 1,
-		"linkId": 1		
+		"linkId": 1,	
 		"levelId": 2,
 		"jackpotId": 1,
 		"status": "reset",
 		"triggerTime": "2024-05-12T22:27:21.373+00:00",
 		"resetTime": "2024-05-12T22:27:22.373+00:00",
 		"resetMethod": "egmTransfer",
-		"amount": 10000,
+		"amount": 10000
     },
     {
 		"id": 2,
-		"linkId": 1		
+		"linkId": 1,		
 		"levelId": 2,
 		"jackpotId": 2,
 		"status": "reset",
 		"triggerTime": "2024-05-12T22:27:22.373+00:00",
 		"resetTime": "2024-05-12T22:27:23.373+00:00",
 		"resetMethod": "egmTransfer",
-		"amount": 12000,
+		"amount": 12000
     },
     {
 		"id": 3,
@@ -410,7 +410,7 @@
 		"triggerTime": "2024-05-12T22:27:24.373+00:00",
 		"resetTime": "",
 		"resetMethod": "",
-		"amount": 12300,
+		"amount": 12300
     }
   ],
   "Media": [
