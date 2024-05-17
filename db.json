@@ -412,14 +412,5 @@
 		"resetMethod": "",
 		"amount": 12300
     }
-  ],
-  "Media": [
-	{
-		"type": "udpMulticast",
-		"config": {
-			"port": "1000",
-			"ipAddress": "192.168.245.99"
-		}
-	}
   ]
 }
