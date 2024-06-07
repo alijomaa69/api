@@ -123,7 +123,7 @@
      },
      {
        "id": 2,
-       "name": "Level1",
+       "name": "Level 2",
        "autoPayLimit": 100000,
        "autoPayDelay": 10,
        "scope": 1,
@@ -250,25 +250,27 @@
    "JackpotHits":[
       {
           "id": 1,
-          "jackpotId": 1,
-          "status": 0,
+          "status": 1,
           "payStatus": 1,
-          "triggerTime": "2024-06-07T01:00:50.417Z",
-          "resetTime": "2024-06-07T01:00:50.417Z",
-          "amount": 1120,
+          "triggerTime": "2024-06-07T02:50:17.009Z",
+          "resetTime": "2024-06-07T02:50:17.009Z",
+          "amount": 10100,
           "levelId": 1,
-          "linkId": 1
+          "linkId": 1,
+          "machineId": 1,
+          "levelName": "Level 1"
       },
       {
           "id": 2,
-          "jackpotId": 2,
           "status": 1,
-          "payStatus": 1,
-          "triggerTime": "2024-06-07T01:00:50.417Z",
-          "resetTime": "2024-06-07T01:00:50.417Z",
-          "amount": 2220,
-          "levelId": 3,
-          "linkId": 1
+          "payStatus": 3,
+          "triggerTime": "2024-06-07T02:50:17.009Z",
+          "resetTime": "2024-06-07T02:50:17.009Z",
+          "amount": 10200,
+          "levelId": 2,
+          "linkId": 1,
+          "machineId": 3,
+          "levelName": "Level 2"
       }
    ]
 }
