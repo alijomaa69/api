@@ -186,7 +186,59 @@
          "totalMoneyIn": 0,
          "totalMoneyOut": 0,
          "machineId": 1
-       }
+       },
+       "links" : [
+          {
+             "id": 1,
+             "name": "Test",
+             "jpcId": 1,
+             "configurationHash": "",
+             "levels": [
+               {
+                 "id": 1,
+                 "name": "Level 1",
+                 "autoPayLimit": 100000,
+                 "autoPayDelay": 10,
+                 "scope": 1,
+                 "maxResetPercentage": 90,
+                 "type": {
+                   "id": 1,
+                   "type": 1,
+                   "denomination": 10,
+                   "triggerProbability": 1000000,
+                   "pools": [
+                     {
+                       "id": 1,
+                       "type": 1,
+                       "name": "Cash-1",
+                       "min": 10000,
+                       "max": 100000,
+                       "incrementPercentage": 2,
+                       "levelTypeId": 1
+                     }
+                   ],
+                   "levelId": 1
+                 },
+                 "configurationHash": "",
+                 "levelState": null
+               }
+             ],
+         }
+       ],
+      "JackpotHits" : [
+            {
+                "id": 1,
+                "status": 1,
+                "payStatus": 1,
+                "triggerTime": "2024-06-07T02:50:17.009Z",
+                "resetTime": "2024-06-07T02:50:17.009Z",
+                "amount": 10100,
+                "levelId": 1,
+                "linkId": 1,
+                "machineId": 1,
+                "levelName": "Level 1"
+            }
+      ]
      },
      {
        "id": 3,
@@ -215,7 +267,59 @@
          "totalMoneyIn": 0,
          "totalMoneyOut": 0,
          "machineId": 3
-       }
+       },
+       "links" : [
+          {
+             "id": 1,
+             "name": "Test",
+             "jpcId": 1,
+             "configurationHash": "",
+             "levels": [
+               {
+                 "id": 1,
+                 "name": "Level 1",
+                 "autoPayLimit": 100000,
+                 "autoPayDelay": 10,
+                 "scope": 1,
+                 "maxResetPercentage": 90,
+                 "type": {
+                   "id": 1,
+                   "type": 1,
+                   "denomination": 10,
+                   "triggerProbability": 1000000,
+                   "pools": [
+                     {
+                       "id": 1,
+                       "type": 1,
+                       "name": "Cash-1",
+                       "min": 10000,
+                       "max": 100000,
+                       "incrementPercentage": 2,
+                       "levelTypeId": 1
+                     }
+                   ],
+                   "levelId": 1
+                 },
+                 "configurationHash": "",
+                 "levelState": null
+               }
+             ],
+           }
+       ],
+      "JackpotHits":[
+            {
+                "id": 2,
+                "status": 1,
+                "payStatus": 3,
+                "triggerTime": "2024-06-07T02:50:17.009Z",
+                "resetTime": "2024-06-07T02:50:17.009Z",
+                "amount": 10200,
+                "levelId": 2,
+                "linkId": 1,
+                "machineId": 3,
+                "levelName": "Level 2"
+            }
+         ]
      },
      {
        "id": 4,
@@ -244,8 +348,47 @@
          "totalMoneyIn": 0,
          "totalMoneyOut": 0,
          "machineId": 4
-       }
-     }
+       },
+       "links" : [
+          {
+             "id": 1,
+             "name": "Test",
+             "jpcId": 1,
+             "configurationHash": "",
+             "levels": [
+               {
+                 "id": 1,
+                 "name": "Level 1",
+                 "autoPayLimit": 100000,
+                 "autoPayDelay": 10,
+                 "scope": 1,
+                 "maxResetPercentage": 90,
+                 "type": {
+                   "id": 1,
+                   "type": 1,
+                   "denomination": 10,
+                   "triggerProbability": 1000000,
+                   "pools": [
+                     {
+                       "id": 1,
+                       "type": 1,
+                       "name": "Cash-1",
+                       "min": 10000,
+                       "max": 100000,
+                       "incrementPercentage": 2,
+                       "levelTypeId": 1
+                     }
+                   ],
+                   "levelId": 1
+                 },
+                 "configurationHash": "",
+                 "levelState": null
+               }
+             ],
+           }
+       ],
+      "JackpotHits":[]
+      }
    ],
    "JackpotHits":[
       {
